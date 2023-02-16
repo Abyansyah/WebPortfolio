@@ -11,6 +11,7 @@ function Main() {
       <About />
       <Karya />
       <Kontak/>
+      
     </>
   );
 }

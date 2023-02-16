@@ -2,8 +2,7 @@
   overflow: hidden;
   padding: 8rem 2rem 3rem 2rem;
   background-color: #212736;
-  height: 100vh;
-  overflow: auto;
+  height: 100%;
 }
 .about .heading{
     font-size: 32px;
