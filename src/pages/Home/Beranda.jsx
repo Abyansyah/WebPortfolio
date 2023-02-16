@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import '../Css/Beranda.css';
-import Button from './Button';
+import '../../Css/Beranda.css';
+import Button from '../../Components/Button';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 

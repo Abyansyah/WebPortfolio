@@ -1,8 +1,8 @@
 import React from 'react';
-import About from '../Components/About';
-import Beranda from '../Components/Beranda';
-import Karya from '../Components/karya';
-import Kontak from '../Components/Kontak'
+import About from '../pages/About/About';
+import Beranda from '../pages/Home/Beranda';
+import Karya from '../pages/Karya/karya';
+import Kontak from '../pages/Kontak/Kontak'
 
 function Main() {
   return (

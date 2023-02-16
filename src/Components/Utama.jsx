@@ -1,8 +1,8 @@
 import {Routes, Route} from 'react-router-dom'
 import Beranda from '../pages/Main';
-import About from './About';
-import Karya from './karya';
-import Kontak from './Kontak';
+import About from '../pages/About/About';
+import Karya from '../pages/Karya/karya';
+import Kontak from '../pages/Kontak/Kontak';
 
 function Utama() {
   return (

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import Aos from 'aos';
-import Gambar from '../Asset/foto.png';
-import '../Css/About.css';
-import Button from './Button';
+import Gambar from '../../Asset/foto.png';
+import '../../Css/About.css';
+import Button from '../../Components/Button';
 import "aos/dist/aos.css"
 
 const About = () => {

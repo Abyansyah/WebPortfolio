@@ -1,10 +1,9 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import '../Css/Karya.css';
+import '../../Css/Karya.css';
 import Menu from './Data';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import Button from './Button';
 
 const Portfolio = () => {
   const [items, setItems] = useState(Menu);
