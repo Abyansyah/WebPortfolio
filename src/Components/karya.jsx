@@ -4,6 +4,7 @@ import '../Css/Karya.css';
 import Menu from './Data';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Button from './Button';
 
 const Portfolio = () => {
   const [items, setItems] = useState(Menu);
@@ -44,9 +45,9 @@ const Portfolio = () => {
             <li onClick={() => filterItem('Backend')}>
               <Link className="img-filter">Backend</Link>
             </li>
-            <li onClick={() => filterItem('Seo')}>
+            {/* <li onClick={() => filterItem('Seo')}>
               <Link className="img-filter">Seo</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 
@@ -60,6 +61,7 @@ const Portfolio = () => {
                     <div class="overlay">
                       <div class="overlay-inner">
                         <h4>{elem.heading}</h4>
+                        {/* <Button name='see' link={elem.link}/> */}
                         <p>{elem.paragrapgh}</p>
                       </div>
                     </div>
