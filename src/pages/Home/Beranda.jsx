@@ -17,7 +17,7 @@ function Beranda() {
             I Am Ahmad <br /> UI/UX Designer <br /> & Developer
           </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est autem laborum <br /> blanditiis sunt impedit neque reprehenderit porro. Amet, provident iste?
+            Junior Fullstack Developer, Student At SMK TELKOM MALANG.
           </p>
         </div>
 
@@ -36,7 +36,7 @@ function Beranda() {
           </Link>
         </div>
 
-        <Button name="click me" class="fa-regular fa-envelope" aos="fade-right" />
+        <Button name="Hire me" class="fa-regular fa-envelope" aos="fade-right" link="/kontak" />
       </section>
     </>
   );

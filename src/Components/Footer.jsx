@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Css/Footer.css';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -10,16 +10,16 @@ function Footer() {
           <h1>Ahmad Abyansyah</h1>
           <ul className="footer-menu">
             <li className='footer-item'>
-              <Link>Home</Link>
+              <NavLink to="/" className={({ isActive }) => (isActive ? 'link-active' : 'link')}>Home</NavLink>
             </li>
             <li className='footer-item'>
-              <Link>About</Link>
+              <NavLink to="/about" className={({ isActive }) => (isActive ? 'link-active' : 'link')}>About</NavLink>
             </li>
             <li className='footer-item'>
-              <Link>Karya</Link>
+              <NavLink to="/karya" className={({ isActive }) => (isActive ? 'link-active' : 'link')}>Karya</NavLink>
             </li>
             <li className='footer-item'>
-              <Link>Kontak</Link>
+              <NavLink to="/kontak" className={({ isActive }) => (isActive ? 'link-active' : 'link')}>Kontak</NavLink>
             </li>
           </ul>
           <ul className="list-footer">

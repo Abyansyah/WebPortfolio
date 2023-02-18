@@ -26,7 +26,7 @@ const Portfolio = () => {
           <h2>
             my <span>works</span>
           </h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, temporibus consequuntur dicta ullam illo facere.</p>
+          <p>Most of the projects I work on.</p>
           <div className="port-line"></div>
         </div>
 
@@ -44,9 +44,6 @@ const Portfolio = () => {
             <li onClick={() => filterItem('Backend')}>
               <Link className="img-filter">Backend</Link>
             </li>
-            {/* <li onClick={() => filterItem('Seo')}>
-              <Link className="img-filter">Seo</Link>
-            </li> */}
           </ul>
         </div>
 
