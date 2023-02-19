@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import '../../Css/Kontak.css';
@@ -14,22 +15,36 @@ function Kontak() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
+  const notify = () =>
+    toast.success('Pesan berhasil dikirim!', {
+      position: 'top-center',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'dark',
+    });
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    const data={
-      Name:name,
-      Email:email,
-      Message:message
-    }
-    axios.post('https://sheet.best/api/sheets/b097a330-a78a-46d4-b54a-669f920a9f5d', data).then((res)=>{
+    const data = {
+      Name: name,
+      Email: email,
+      Message: message,
+    };
+    axios.post('https://sheet.best/api/sheets/b097a330-a78a-46d4-b54a-669f920a9f5d', data).then((res) => {
       setName('');
       setEmail('');
       setMessage('');
-    })
+      notify();
+    });
   };
   return (
     <>
       <section className="contact" id="contact">
+        <ToastContainer position="top-center" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="dark" />
         <div data-aos="zoom-in" className="contact-tittle">
           <h2>
             {' '}
