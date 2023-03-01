@@ -8,8 +8,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Helmet>
-      <title>Abyansyah Ahmad</title>
-      <meta name="description" content="Abyansyah Ahmad" />
+      <title>abyansyah ahmad</title>
+      <meta name="description" content="abyansyah ahmad" />
     </Helmet>
     <App />
   </BrowserRouter>
